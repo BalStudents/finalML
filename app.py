@@ -7,9 +7,9 @@ model = joblib.load('biaya_hidup_model.pkl')  # load model dari file
 
 st.title("Prediksi Biaya Hidup Freelancer di Indonesia")
 st.markdown("""
-Setelah semua input dimasukkan, pengguna menekan tombol **"Prediksi Biaya Hidup"** dan model akan memproses data tersebut melalui algoritma regresi linear yang sudah dilatih sebelumnya. Model akan mempertimbangkan seluruh variabel, termasuk faktor non-numerik seperti **gaya hidup**, dan menghasilkan estimasi total biaya hidup bulanan.
-Hasil prediksi ini dapat digunakan sebagai acuan bagi freelancer atau pekerja remote untuk merencanakan kebutuhan finansial mereka di berbagai kota dan gaya hidup yang berbeda.
-""")
+Setelah semua input dimasukkan, pengguna menekan tombol **"Prediksi Biaya Hidup"** dan model akan memproses data tersebut melalui algoritma regresi linear yang sudah dilatih sebelumnya. Model akan mempertimbangkan seluruh variabel, termasuk faktor non-numerik seperti **gaya hidup**, dan menghasilkan estimasi total biaya hidup bulanan. 
+
+Model ini bekerja dengan memanfaatkan data numerik aktual dari pengguna sebagai input utama. Artinya, agar prediksi biaya hidup bulanan lebih akurat dan sesuai kondisi masing-masing, pengguna perlu memasukkan estimasi biaya mereka sendiri.""")
 
 # Input user
 city = st.selectbox("Pilih Kota", ['Jakarta', 'Surabaya', 'Yogyakarta', 'Bali', 'Bandung'])
