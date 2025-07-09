@@ -16,11 +16,11 @@ city = st.selectbox("Pilih Kota", ['Jakarta', 'Surabaya', 'Yogyakarta', 'Bali', 
 status = st.radio("Status", ['Single', 'Menikah'])
 lifestyle = st.selectbox("Gaya Hidup", ['Minimalis', 'Menengah', 'Mewah'])
 
-rent = st.number_input("Biaya Sewa Tempat (IDR)", value=0)
-food = st.number_input("Biaya Makan per Bulan (IDR)", value=0)
-transport = st.number_input("Biaya Transportasi (IDR)", value=0)
-internet = st.number_input("Biaya Internet (IDR)", value=0)
-gym = st.number_input("Biaya Gym (IDR)", value=0)
+rent = st.number_input("Estimasi biaya kontrakan per bulan (IDR)", value=0)
+food = st.number_input("Estimasi biaya Makan per bulan (IDR)", value=0)
+transport = st.number_input("Estimasi biaya bensin per bulan", value=0)
+internet = st.number_input("Estimasi biaya internet per bula", value=0)
+gym = st.number_input("Estimasi biaya untuk kesehatan per bulan", value=0)
 
 # Mapping sesuai model
 city_mapping = {'Jakarta': 0, 'Bali': 1, 'Bandung': 2, 'Surabaya': 3, 'Yogyakarta': 4}
