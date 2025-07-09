@@ -12,10 +12,10 @@ city = st.selectbox("Pilih Kota", ['Jakarta', 'Surabaya', 'Yogyakarta', 'Bali', 
 status = st.radio("Status", ['Single', 'Menikah'])
 lifestyle = st.selectbox("Gaya Hidup", ['Minimalis', 'Menengah', 'Mewah'])
 
-rent = st.number_input("Biaya Sewa Tempat (IDR)", value=3000000)
-food = st.number_input("Biaya Makan per Bulan (IDR)", value=2000000)
-transport = st.number_input("Biaya Transportasi (IDR)", value=500000)
-internet = st.number_input("Biaya Internet (IDR)", value=400000)
+rent = st.number_input("Biaya Sewa Tempat (IDR)", value=0)
+food = st.number_input("Biaya Makan per Bulan (IDR)", value=0)
+transport = st.number_input("Biaya Transportasi (IDR)", value=0)
+internet = st.number_input("Biaya Internet (IDR)", value=0)
 gym = st.number_input("Biaya Gym (IDR)", value=0)
 
 # Mapping sesuai model
@@ -27,7 +27,11 @@ input_data = pd.DataFrame([[
     city_mapping[city],
     status_mapping[status],
     lifestyle_mapping[lifestyle],
-    rent, food, transport, internet, gym
+    rent,
+    food,
+    transport,
+    internet,
+    gym
 ]], columns=['city', 'status', 'lifestyle', 'rent', 'food', 'transport', 'internet', 'gym'])
 
 # Prediksi saat tombol diklik
